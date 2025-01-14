@@ -35,7 +35,7 @@ export default function NavigationMenu() {
         {menuList.map(({ id, label, link, subMenu }) => (
           <li key={id}>
             <Link href={link}>{label}</Link>
-            {subMenu && renderMenuList(subMenu)}
+            {Boolean(subMenu.length) && renderMenuList(subMenu)}
           </li>
         ))}
       </ul>
