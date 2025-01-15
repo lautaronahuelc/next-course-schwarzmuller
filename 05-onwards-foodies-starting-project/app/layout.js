@@ -1,3 +1,5 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import MainHeader from '@/components/main-header/main-header';
 
 import './globals.css';
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
         <MainHeader />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-HNEDC62QWL" />
     </html>
   );
 }
