@@ -9,7 +9,6 @@ import NavLink from './nav-link';
 import classes from './main-header.module.css';
 
 export default function MainHeader() {
-  console.log('[MainHeader] rerender')
   return (
     <>
       <MainHeaderBackground />

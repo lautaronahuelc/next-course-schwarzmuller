@@ -8,7 +8,6 @@ import { useMemo } from 'react';
 
 export default function NavLink({ children, href, ...props }) {
   const path = usePathname();
-  console.log('💊 [NavLink] path:', path);
   
   return (
     <Link
